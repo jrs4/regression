@@ -1,7 +1,7 @@
-# Regression Model.ipynb - Wheat Calibration
-Artificial Neural Network based on a TensorFlow / Keras model
+# Objective
+Develop an artifical neural network in Tensorflow / Keras that can predict values for protein and moisture in wheat samples with a a maximum permissible error of 0.4%. The spectra files contains the absorbance data of wheat samples ranging from 720 to 1100nm in 10nm intervals (38 pixels) along with the laboratory values for both protein and moisture 
 
-The spectra files contains the absorbance data of wheat samples ranging from 720 to 1100nm in 10nm intervals (38 pixels) along with the laboratory values for protein and moisture 
+# Regression Model.ipynb - Wheat Calibration
 
 There are 3 sets of folders:
 * (1) Training: contains the training set, data from the master instrument 
