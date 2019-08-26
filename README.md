@@ -1,7 +1,7 @@
-# Objective
-Develop an artifical neural network in Tensorflow / Keras that can predict values for protein and moisture in wheat samples with a a maximum permissible error of 0.4%. The spectra files contains the absorbance data of wheat samples ranging from 720 to 1100nm in 10nm intervals (38 pixels) along with the laboratory values for both protein and moisture 
+# Regression ANN.ipynb - Wheat Calibration
+Artificial Neural Network based on a TensorFlow / Keras model
 
-# Regression Model.ipynb - Wheat Calibration
+The spectra files contains the absorbance data of wheat samples ranging from 720 to 1100nm in 10nm intervals (38 pixels) along with the laboratory values for protein and moisture 
 
 There are 3 sets of folders:
 * (1) Training: contains the training set, data from the master instrument 
@@ -35,7 +35,11 @@ After the data is ready for the neural network, create the model in Keras, compi
 * Pickle MinMaxScaler algorithm from the training set
 * Save models for protein and moisture in HDF5 format (.h5)
 
-# Prediction.ipynb
+# Prediction ANN.ipynb
 * Reads the pickled algorithms and the keras models
 * Applies the same pre-treatment in the data using the unpickled models
 * Makes inferences and calculates slopes and biases
+
+# Regression Algorithms Iteration.ipynb
+* Check the performance of 4 different algotihms: PLS, Gradient Boosting Regressor, Support Vector Machines and Locally Weighted Regression.
+* Iterate across multiple pixels to determine the correct hyperparameters: min_pixel, max_pixel, PLS_components 
